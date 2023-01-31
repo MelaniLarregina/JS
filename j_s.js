@@ -45,3 +45,11 @@ let total = monto + intereses_cuotas (monto , cuotas);
 console.log ("Pediste:  ", monto);
 console.log ("Cuotas: ", cuotas);
 console.log ("Total con intereses: ", monto + intereses_cuotas (monto , cuotas) );
+
+function precio_con_iva
+var precio = 30;
+var iva = monto *30;
+var precio_con_iva = monto + iva;
+
+alert(precio_con_iva);
+
