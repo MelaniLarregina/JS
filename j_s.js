@@ -21,35 +21,33 @@ monto = parseInt (monto);
 let cuotas = prompt ("En cuantas cuotas: 6 , 9 , 12 , 24");
 
 function intereses_cuotas ( monto , cuotas){
- if( cuotas == 6){
-    let interes = monto * 0.30;
-    return interes 
- }
- else if  ( cuotas == 9){
-    let interes = monto * 0.50;
-    return interes 
- }
- else if ( cuotas == 12){
-    let interes = monto * 0.80;
-    return interes
- }
- else if (cuotas == 24){
-    let interes = monto * 100;
-    return interes 
- }
-
+   var interes = 0;
+   if( cuotas == 6){
+      interes = monto * 0.30; 
+   }
+   else if  ( cuotas == 9){
+      interes = monto * 0.50;
+   }
+   else if ( cuotas == 12){
+      interes = monto * 0.80;
+   }
+   else if (cuotas == 24){
+      interes = monto * 1;
+   }
+   return interes;
 }
+
+function iva_prestamo ( total ){
+   return total * 0.21;
+}
+
 let total = monto + intereses_cuotas (monto , cuotas);
+let total_con_iva = total + iva_prestamo(total);
+
+alert("Pediste:  " + monto);
+alert("Cuotas: " + cuotas);
+alert("Total con intereses: " + total);
+alert("Total con intereses e iva: " + total_con_iva);
 
 
-console.log ("Pediste:  ", monto);
-console.log ("Cuotas: ", cuotas);
-console.log ("Total con intereses: ", monto + intereses_cuotas (monto , cuotas) );
-
-function precio_con_iva
-var precio = 30;
-var iva = monto *30;
-var precio_con_iva = monto + iva;
-
-alert(precio_con_iva);
 
