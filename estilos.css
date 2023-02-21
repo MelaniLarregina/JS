@@ -38,3 +38,27 @@
         margin-left: 27rem;
         margin-top: 5rem;
      }
+     .card_contenedora {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: top 4vh;
+        margin-bottom: 5vh; }
+      
+      .card {
+        margin: 5rem;
+        width: 25rem; }
+      
+      .card:hover {
+        animation-name: jump;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; }
+      
+      @keyframes jump {
+        0% {
+          transform: translate(0%, 0%); }
+        50% {
+          transform: translate(0%, 5%); }
+        100% {
+          transform: translate(0%, 0%); } }
+      
